@@ -81,7 +81,6 @@ function TableUser(props) {
         listuser = _.orderBy(listuser, [sortField], [sortBy])
         setListUser(listuser);
     }
-    // const [iputSearchEmail,setiputSearchEmail]=useState('');
     const handleSearch = debounce((envent) => {
         let itemm = envent.target.value;
         if (itemm) {

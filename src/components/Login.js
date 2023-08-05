@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react'
 import { useState } from 'react';
-// import { loginAPI } from '../services/UserService'
 import { toast } from 'react-toastify';
 import { useNavigate } from 'react-router-dom';
 import {handleLoginRedux} from "../redux/action/userAction"
@@ -10,7 +9,6 @@ import TextField from '@mui/material/TextField';
 export default function Login() {
     const navigate=useNavigate();
     const dispatch=useDispatch();
-    // const { loginContext } = useContext(UserContext);//UseConText
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [isShowPassword, setisShowPassword] = useState(false);
